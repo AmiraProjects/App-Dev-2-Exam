@@ -1,11 +1,11 @@
 import React from 'react'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
-import HelloScreen from './src/screens/HelloScreen'
+import MainNavigator from './src/navigator/MainNavigator'
 
 const App = () => {
   return (
     <SafeAreaProvider>
-      <HelloScreen />
+      <MainNavigator />
     </SafeAreaProvider>
   )
 }
