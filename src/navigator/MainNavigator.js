@@ -9,16 +9,30 @@ const Stack = createStackNavigator()
 const MainNavigator = () => {
   return (
     <NavigationContainer>
-        <Stack.Navigator initialRouteName='AddContact'>
+        <Stack.Navigator initialRouteName='ContactList'>
             <Stack.Screen 
                 name='ContactList' 
                 component={ContactListScreen} 
-                options={{title: 'Contact List'}}
+                options={{
+                  title: 'Contact List', 
+                  headerTitleAlign: 'center', 
+                  headerTintColor: 'skyblue',
+                  headerStyle: {
+                    backgroundColor: 'darkblue',
+                  }
+                }}
             />
             <Stack.Screen 
                 name='AddContact' 
                 component={AddContactScreen} 
-                options={{title: 'Add Contact'}}
+                options={{
+                  title: 'Contact List', 
+                  headerTitleAlign: 'center', 
+                  headerTintColor: 'skyblue',
+                  headerStyle: {
+                    backgroundColor: 'darkblue',
+                  }
+                }}
             />
         </Stack.Navigator>
     </NavigationContainer>
